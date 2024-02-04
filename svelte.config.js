@@ -8,13 +8,10 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		// adapter: adapter({
-		// 	fallback: '200.html' // may differ from host to host
-		// }),
 
 		paths: {
-			// base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-			base: process.env.NODE_ENV === 'production' ? '/meurkalender' : ''
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			// base: process.env.NODE_ENV === 'production' ? '/meurkalender' : ''
 		}
 	}
 };
