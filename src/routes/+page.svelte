@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import '@fontsource/roboto';
 </script>
 
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -21,7 +22,24 @@
 	</div>
 </div>
 
+<!-- <svelte:head>
+	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet" />
+</svelte:head> -->
+
+<!-- src:
+	local(''),
+	url('/fonts/lora-v20-latin-500.eot?#iefix') format('embedded-opentype'),
+	/* IE6-IE8 */ url('/fonts/lora-v20-latin-500.woff2') format('woff2'),
+	/* Super Modern Browsers */ url('/fonts/lora-v20-latin-500.woff') format('woff'),
+	/* Modern Browsers */ url('/fonts/lora-v20-latin-500.ttf') format('truetype'),
+	Safari, Android, iOS url('/fonts/lora-v20-latin-500.svg#Lora') format('svg'); /* Legacy iOS */ -->
 <style>
+	/* @font-face {
+		font-family: 'avenir';
+		font-style: normal;
+		font-weight: 500;
+		src: local(''), url('/fonts/avenir.otf');
+	} */
 	.container {
 		height: 90vh;
 		display: flex;
@@ -40,12 +58,16 @@
 		text-align: center;
 	}
 	#textid {
+		margin: 50px;
 		text-align: center;
-		font-family: 'Avenir Next';
+		/* font-family: 'Avenir Next'; */
 		font-weight: bold;
-		font-family: 'AvenirNext-DemiBold';
+		/* font-family: 'AvenirNext-DemiBold'; */
+		/* font-family: 'Prompt'; */
+		font-family: 'Roboto', sans-serif;
 		color: #943a70;
 		width: 50vw;
+		margin-bottom: 100px;
 	}
 	.plaatje {
 		width: 50vw;
@@ -79,9 +101,10 @@
 			padding-top: 200px;
 		}
 	}
-	/* :global(body) {
+	:global(body) {
 		margin: 0;
-	} */
+		padding: 0;
+	}
 	/* body,
 	html {
 		margin: 0;
