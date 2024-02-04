@@ -74,6 +74,7 @@
 		}
 		.plaatje {
 			width: 100vw;
+			padding-top: 200px;
 		}
 	}
 	/* :global(body) {
