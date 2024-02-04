@@ -3,7 +3,7 @@
 	import '@fontsource/roboto';
 </script>
 
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <div class="container">
 	<div class="infodiv" id="imgid">
 		<img class="plaatje" src="{base}/images/meurkalender.png" alt="" />
@@ -60,14 +60,11 @@
 	#textid {
 		margin: 50px;
 		text-align: center;
-		/* font-family: 'Avenir Next'; */
 		font-weight: bold;
-		/* font-family: 'AvenirNext-DemiBold'; */
-		/* font-family: 'Prompt'; */
 		font-family: 'Roboto', sans-serif;
 		color: #943a70;
 		width: 50vw;
-		margin-bottom: 100px;
+		/* padding-bottom: 100px; */
 	}
 	.plaatje {
 		width: 50vw;
@@ -85,7 +82,6 @@
 		max-width: 311px;
 		margin: 0 auto;
 		/* white-space: nowrap; */
-		/* white-space: nowrap; */
 		/* overflow: hidden; */
 		/* text-overflow: ellipsis; */
 	}
@@ -95,10 +91,16 @@
 	@media only screen and (max-width: 700px) {
 		.container {
 			flex-direction: column;
+			height: 200vh;
 		}
 		.plaatje {
 			width: 100vw;
-			padding-top: 200px;
+			/* padding-top: 500; */
+		}
+
+		#imgid {
+			/* position: relative; */
+			/* height: 100%; */
 		}
 	}
 	:global(body) {
