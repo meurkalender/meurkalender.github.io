@@ -12,7 +12,7 @@
 		<p>Goed nieuws! De tweede editie van de Meurkalender is uit *!</p>
 		<p>Bestel jouw Meurkalender via deze link:</p>
 		<div class="linkdiv">
-			<!-- <a class="link" href="www.google.com">ik wil een meurkalender bestellen</a> -->
+			<a class="link" href="{base}/kopenmaar">ik wil een meurkalender bestellen</a>
 		</div>
 		<p>Wees snel want de oplage is beperkt! en vergeet niet: Vrijdag Veegdag!</p>
 		<p class="kleinelettertjes">
@@ -23,7 +23,7 @@
 
 <style>
 	.container {
-		height: 100vh;
+		height: 90vh;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -76,8 +76,15 @@
 			width: 100vw;
 		}
 	}
-	body {
-		
+	/* :global(body) {
 		margin: 0;
+	} */
+	/* body,
+	html {
+		margin: 0;
+		padding: 0;
 	}
+	* {
+		box-sizing: border-box;
+	} */
 </style>
