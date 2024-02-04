@@ -7,10 +7,10 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		// adapter: adapter(),
-		adapter: adapter({
-			fallback: '200.html' // may differ from host to host
-		}),
+		adapter: adapter(),
+		// adapter: adapter({
+		// 	fallback: '200.html' // may differ from host to host
+		// }),
 
 		paths: {
 			// base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
