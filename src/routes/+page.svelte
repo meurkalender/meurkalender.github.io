@@ -60,6 +60,8 @@
 		text-align: center;
 		margin-top: 50px;
 		margin-bottom: 50px;
+		max-width: 311px;
+		margin: 0 auto;
 		/* white-space: nowrap; */
 		/* white-space: nowrap; */
 		/* overflow: hidden; */
