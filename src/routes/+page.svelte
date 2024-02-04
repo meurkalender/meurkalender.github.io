@@ -22,6 +22,10 @@
 	</div>
 </div>
 
+<!-- how to https://jsfiddle.net/sFM7C/287/ -->
+<!-- do cname stuff https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site -->
+<!-- get font from open dinges https://khromov.se/adding-locally-hosted-google-fonts-to-your-sveltekit-project/ -->
+
 <!-- <svelte:head>
 	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet" />
 </svelte:head> -->
@@ -91,7 +95,7 @@
 	@media only screen and (max-width: 700px) {
 		.container {
 			flex-direction: column;
-			height: 200vh;
+			height: 150vh;
 		}
 		.plaatje {
 			width: 100vw;
