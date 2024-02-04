@@ -2,50 +2,82 @@
 	import { base } from '$app/paths';
 </script>
 
-<!-- <div class="imgdiv">
-    <img class="plaatje" src="{base}/images/horizontaal.png" alt="" />
-</div> -->
-<div class="textdiv">
-	<h1>WELKOM!</h1>
-	<p>Goed nieuws! De tweede editie van de Meurkalender is uit *!</p>
-	<p>Bestel jouw Meurkalender via deze link:</p>
-	<div class="linkdiv">
-		<a class="link" href="www.google.com">ik wil een meurkalender bestellen</a>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<div class="container">
+	<div class="infodiv" id="imgid">
+		<img class="plaatje" src="{base}/images/meurkalender.png" alt="" />
 	</div>
-	<p>Wees snel want de oplage is beperkt! en vergeet niet: Vrijdag Veegdag!</p>
-	<p class="kleinelettertjes">
-		*Wetenschappelijk onderzoek wijst uit dat de 2e editie 2.34 x hoger scoort kwa humor.
-	</p>
+	<div class="infodiv" id="textid">
+		<h1>WELKOM!</h1>
+		<p>Goed nieuws! De tweede editie van de Meurkalender is uit *!</p>
+		<p>Bestel jouw Meurkalender via deze link:</p>
+		<div class="linkdiv">
+			<!-- <a class="link" href="www.google.com">ik wil een meurkalender bestellen</a> -->
+		</div>
+		<p>Wees snel want de oplage is beperkt! en vergeet niet: Vrijdag Veegdag!</p>
+		<p class="kleinelettertjes">
+			*Wetenschappelijk onderzoek wijst uit dat de 2e editie 2.34 x hoger scoort kwa humor.
+		</p>
+	</div>
 </div>
 
 <style>
-    .textdiv {
-        text-align: center;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
-        width: 400px;
-    }
-	.imgdiv {
+	.container {
+		height: 100vh;
 		display: flex;
-		height: 90vh;
-		justify-content: center; /* Add this line */
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	/* .container {
+		height: 80vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	} */
+	.infodiv {
+		text-align: center;
+	}
+	#textid {
+		text-align: center;
+		font-family: 'Avenir Next';
+		font-weight: bold;
+		font-family: 'AvenirNext-DemiBold';
+		color: #943a70;
+		width: 50vw;
 	}
 	.plaatje {
-		height: 90vh;
-		margin: auto; /* Add this line */
+		width: 50vw;
 	}
 	.link {
+	}
+	.linkdiv {
 		background-color: #fadd4e;
 		border: 10px solid #c63026;
 		border-radius: 40px;
-		padding: 20px; 
+		padding: 20px;
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		/* white-space: nowrap; */
+		/* white-space: nowrap; */
+		/* overflow: hidden; */
+		/* text-overflow: ellipsis; */
 	}
-	.linkdiv {
-		margin: 50px;
+	.kleinelettertjes {
+		font-size: 0.7em;
 	}
-    .kleinelettertjes {
-        font-size: 0.7em;
-    }
+	@media only screen and (max-width: 700px) {
+		.container {
+			flex-direction: column;
+		}
+		.plaatje {
+			width: 100vw;
+		}
+	}
+	body {
+		
+		margin: 0;
+	}
 </style>

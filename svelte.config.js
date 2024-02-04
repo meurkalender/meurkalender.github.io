@@ -1,17 +1,19 @@
 import adapter from '@sveltejs/adapter-static';
 // import { vitePreprocess } from '@sveltejs/kit/vite';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
-
+		// adapter: adapter(),
+		adapter: adapter({
+			fallback: '200.html' // may differ from host to host
+		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-			// base: process.env.NODE_ENV === 'production' ? '/meurkalender' : ''
+			// base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+			base: process.env.NODE_ENV === 'production' ? '/meurkalender' : ''
 		}
 	}
 };

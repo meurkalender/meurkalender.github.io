@@ -1,8 +1,10 @@
+
+
 <slot />
 
 <style>
 	:global(body) {
-		background: linear-gradient(#943a70, #509f61, #dddaed, #509f61,#943a70);
+		background: linear-gradient(#943a70, #509f61, #b6c9e9, #dddaed, #b6c9e9, #509f61, #943a70);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		height: 100%;
