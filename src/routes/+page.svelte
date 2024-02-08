@@ -11,13 +11,18 @@
 	<div class="infodiv" id="textid">
 		<h1>WELKOM!</h1>
 		<p>Goed nieuws! De tweede editie van de Meurkalender is uit *!</p>
+		<p style="font-style:italic">Dé kalender van 1 April 2024 - 1 April 2025</p>
 		<p>Bestel jouw Meurkalender via deze link:</p>
 		<div class="linkdiv">
 			<a class="link" href="https://buy.stripe.com/fZeeVl3HJ1wx7HWbII"
 				>ik wil een meurkalender bestellen</a
 			>
 		</div>
-		<p>Wees snel want de oplage is beperkt! en vergeet niet: Vrijdag Veegdag!</p>
+		<p>Na bestelling wordt de kalender eind Maart thuisbezorgd. Afhalen is ook een optie!</p>
+		<p>
+			Wees <span style="text-decoration:underline">snel</span> want de oplage is beperkt! en vergeet
+			niet: Maandag Moonday!
+		</p>
 		<p class="kleinelettertjes">
 			*Wetenschappelijk onderzoek wijst uit dat de 2e editie 2.34 x hoger scoort kwa humor.
 		</p>
@@ -40,6 +45,18 @@
 	/* Modern Browsers */ url('/fonts/lora-v20-latin-500.ttf') format('truetype'),
 	Safari, Android, iOS url('/fonts/lora-v20-latin-500.svg#Lora') format('svg'); /* Legacy iOS */ -->
 <style>
+	a:link {
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+	}
 	/* @font-face {
 		font-family: 'avenir';
 		font-style: normal;
@@ -77,7 +94,8 @@
 	}
 	.link {
 	}
-	.linkdiv {
+	.link {
+		display: block;
 		background-color: #fadd4e;
 		border: 10px solid #c63026;
 		border-radius: 40px;
@@ -93,6 +111,7 @@
 	}
 	.kleinelettertjes {
 		font-size: 0.7em;
+		color: #fadd4e;
 	}
 	@media only screen and (max-width: 700px) {
 		.container {
@@ -104,7 +123,7 @@
 			/* padding-top: 500; */
 		}
 		#textid {
-			width: 85vw;
+			width: 95vw;
 		}
 		#imgid {
 			/* position: relative; */

@@ -8,10 +8,10 @@
 
 <style>
 	.container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	@media only screen and (max-width: 700px) {
@@ -21,9 +21,6 @@
 		.container {
 			width: 90vw;
 			padding: 10;
-		}
-		background {
-			background-color: white;
 		}
 	}
 </style>
