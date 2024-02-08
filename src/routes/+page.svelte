@@ -13,7 +13,9 @@
 		<p>Goed nieuws! De tweede editie van de Meurkalender is uit *!</p>
 		<p>Bestel jouw Meurkalender via deze link:</p>
 		<div class="linkdiv">
-			<a class="link" href="{base}/kopenmaar">ik wil een meurkalender bestellen</a>
+			<a class="link" href="https://buy.stripe.com/fZeeVl3HJ1wx7HWbII"
+				>ik wil een meurkalender bestellen</a
+			>
 		</div>
 		<p>Wees snel want de oplage is beperkt! en vergeet niet: Vrijdag Veegdag!</p>
 		<p class="kleinelettertjes">
