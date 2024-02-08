@@ -103,7 +103,9 @@
 			width: 100vw;
 			/* padding-top: 500; */
 		}
-
+		#textid {
+			width: 85vw;
+		}
 		#imgid {
 			/* position: relative; */
 			/* height: 100%; */
